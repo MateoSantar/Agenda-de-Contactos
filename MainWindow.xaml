@@ -1,0 +1,25 @@
+﻿<Window x:Class="AgendaDeContactos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AgendaDeContactos"
+        mc:Ignorable="d"
+        Title="Agenda de Contactos" Height="421" Width="460" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="none">
+    <Grid>
+        <Button x:Name="searchBtn" FontSize="20" Content="Buscar" HorizontalAlignment="Left" Margin="18,40,0,0" VerticalAlignment="Top" Height="32" Width="78"/>
+        <TextBox x:Name="searchTxT" HorizontalAlignment="Left" FontSize="15" Margin="101,44,0,0" TextWrapping="Wrap" Text="Ingrese el nombre" VerticalAlignment="Top" Width="178"/>
+        <ComboBox x:Name="searchComboBox"  HorizontalAlignment="Left" Margin="18,81,0,0" VerticalAlignment="Top" Width="78" SelectedIndex="0">
+            <ComboBoxItem Content="Nombre"/>
+            <ComboBoxItem Content="Apellido"/>
+            <ComboBoxItem Content="Teléfono"/>
+        </ComboBox>
+        <Button x:Name="editBtn" Content="Editar" FontSize="20" Padding="0" HorizontalAlignment="Left" Margin="284,39,0,0" VerticalAlignment="Top" Height="33" Width="66" Click="editBtn_Click"/>
+        <Button x:Name="addBtn" Content="Añadir" FontSize="20" Padding="0" HorizontalAlignment="Left" Margin="363,38,0,0" VerticalAlignment="Top" Height="33" Width="66" Click="addBtn_Click"/>
+        <Button x:Name="saveBtn" Content="Guardar" FontSize="15" Padding="0" HorizontalAlignment="Left" Margin="284,81,0,0" VerticalAlignment="Top" Height="33" Width="66"/>
+        <Button x:Name="closeBtn" Content="X" FontSize="15" Padding="0" HorizontalAlignment="Left" Margin="441,0,0,0" VerticalAlignment="Top" Height="22" Width="19"/>
+        <Button x:Name="importBtn" Content="Importar" FontSize="15" Padding="0" HorizontalAlignment="Left" Margin="363,80,0,0" VerticalAlignment="Top" Height="33" Width="66"/>
+        <ListBox x:Name="contactList" FontSize="10"  Margin="10,129,31,48" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Visible" SelectionChanged="contactList_SelectionChanged" IsSynchronizedWithCurrentItem="True"/>
+
+    </Grid>
+</Window>
