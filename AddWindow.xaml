@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:AgendaDeContactos"
         mc:Ignorable="d"
         
-        Title="Añadir contacto" Height="276" Width="320" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="none">
+        Title="Añadir contacto" Height="276" Width="320" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         <TextBox x:Name="firstNameTxT" FontSize="15"  HorizontalAlignment="Left" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272"/>
         <TextBox x:Name="lastNameTxT"  FontSize="15"  HorizontalAlignment="Left" Margin="10,86,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="272"/>

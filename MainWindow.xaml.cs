@@ -1,4 +1,6 @@
-﻿using System.Collections.ObjectModel;
+﻿using Newtonsoft.Json;
+using System.Collections.ObjectModel;
+using System.IO;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -52,6 +54,12 @@ namespace AgendaDeContactos
                     editWin.Close();
                 }
             }
+        }
+
+        private void saveBtn_Click(object sender, RoutedEventArgs e)
+        {
+            string jsonString = JsonConvert.SerializeObject(Contacts,Formatting.Indented);
+            File.WriteAllText("contacts.json", jsonString);
         }
     }
     public class Contact(string firstName, string lastName, string phoneNumber, string email)
